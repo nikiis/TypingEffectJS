@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #f0e6ef;
+}
+
+nav{
+    background-color: #9c89b8;
+}
+
+.title h2 {
+    margin: 2% 25%;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+
+}
+
+.title {
+    background-color: #9c89b8;
+    background-image: -webkit-linear-gradient(65deg, #b8bedd 40%, #9c89b8 40%);
+    min-height: 101vh;
+    text-align: center;
+}
+
+.vertical-align {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro-items {
+    text-align: center;
+}
+
+
+.typing-text {
+    display: flex;
+}
+
+.typing {
+    position: relative;
+    margin-left: 10px;
+}
+
+.my-name-text {
+    color: #a5ffd6;
+    /* color: #f0e6ef; */
+}
+
+.developer-text {
+    color: #90e0ef;
+}
+
+.ramen-text {
+    color: #ffd6a5;
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    border-right: 2px solid #f0e6ef;
+    right: -10px;
+    animation: blink 0.5s infinite ease;
+}
+
+/* keyframe animation for blinking typing effect */
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
